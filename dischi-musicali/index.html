@@ -15,12 +15,14 @@
         </div>
       </header>
       <!-- selezione genere -->
-      <select class="box-select" name="">
-        <option class="" value="Rock">Rock</option>
-        <option class="" value="Pop">Pop</option>
-        <option class="" value="Metal">Metal</option>
-        <option class="" value="Jazz">Jazz</option>
+
+      <select id="genere-musicale" name="">
+        <option class="rock" value="Rock">Rock</option>
+        <option class="pop" value="Pop">Pop</option>
+        <option class="metal" value="Metal">Metal</option>
+        <option class="jazz" value="Jazz">Jazz</option>
       </select>
+
       <!-- /selezione genere -->
 
       <div class="cds-container container">
@@ -32,6 +34,7 @@
           <img src={{poster}} alt="">
           <h3>{{title}}</h3>
           <span class="author">{{author}}</span>
+          <span class="genre">{{genre}}</span>
           <span class="year">{{year}}</span>
         </div>
       </script>

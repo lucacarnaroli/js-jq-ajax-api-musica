@@ -16,11 +16,13 @@ $(document).ready(function() {
       var selected= $(this).val();
       // ciclo per selezionare i cd
       for (var i = 0; i < $('.cd').length; i++) {
-        // se il genere è uguale al valore selezionato mostrameli
-        if ($('.genre').eq(i).text() == selected) {
-           $('.cd').eq(i).show();
-      } else {
-           $('.cd').eq(i).hide();
+        // se il genere è uguale al valore selezionato mostra
+        if ($('.all').text()== selected) {
+          $('.cd').show();
+        } else if ($('.genre').eq(i).text() == selected) {
+          $('.cd').eq(i).show();
+        } else {
+          $('.cd').eq(i).hide();
       }
      }
     }
